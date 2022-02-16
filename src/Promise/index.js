@@ -24,9 +24,12 @@ export const PromiseRendering = () => {
 
     rejectPromise().then(val => console.log(val)).catch(error => setErrorWords(error))
 
+    const sum = 10+34;
+
     return (
         <>
             <div>{number}</div>
+            <div>{sum}</div>
             <div>{errorNumber}</div>
             <div>{words}</div>
             <div>{errorWords}</div>
